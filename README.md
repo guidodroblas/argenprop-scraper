@@ -17,11 +17,18 @@ Scraper y analizador de precios de alquiler en la Ciudad de Buenos Aires, constr
 ## 🧩 Estructura
 src/
 ├── scraper.py # Selenium + BeautifulSoup
+
 ├── cleaning.py # Limpieza y normalización
+
 ├── features.py # Feature engineering
+
+
 ├── analysis_interactive.py # Visualizaciones interactivas
+
 ├── insights_advanced.py # Insights y modelos
+
 ├── ml_model.py # Entrenamiento ML
+
 └── main.py # Pipeline principal
 
 ## 🧠 Uso
