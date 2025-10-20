@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d022d988867689b0728b2717f4e46761 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d022d988867689b0728b2717f4e46761" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d022d988867689b0728b2717f4e46761 = L.map(
+                "map_d022d988867689b0728b2717f4e46761",
+                {
+                    center: [-34.6037, -58.3816],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91691f14c37e39169195397ebcbb9930 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_91691f14c37e39169195397ebcbb9930.addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+            var circle_marker_a77a28e3b267a7525ea9b1c5616281fb = L.circleMarker(
+                [-34.593, -58.487],
+                {"bubblingMouseEvents": true, "color": "#fea445ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea445ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_e8d1ba8ec1f98a7985458d8c3dcf9054 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28fbc98533dd2bf55be82db95a5250fb = $(`<div id="html_28fbc98533dd2bf55be82db95a5250fb" style="width: 100.0%; height: 100.0%;"><b>Agronomía</b><br>💰 Promedio total: $687,438<br>📏 Promedio m²: 16,757<br><a href='https://www.argenprop.com/departamento-alquiler--18048667' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_e8d1ba8ec1f98a7985458d8c3dcf9054.setContent(html_28fbc98533dd2bf55be82db95a5250fb);
+            
+        
+
+        circle_marker_a77a28e3b267a7525ea9b1c5616281fb.bindPopup(popup_e8d1ba8ec1f98a7985458d8c3dcf9054)
+        ;
+
+        
+    
+    
+            circle_marker_a77a28e3b267a7525ea9b1c5616281fb.bindTooltip(
+                `<div>
+                     Agronomía - $687,438
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b52bc255bf708d4963da9b614844065 = L.circleMarker(
+                [-34.61, -58.42],
+                {"bubblingMouseEvents": true, "color": "#fe9d43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9d43ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_548015c9da27db778c4f607d077605fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d13d9eb2579d46f66f7e6488e2316171 = $(`<div id="html_d13d9eb2579d46f66f7e6488e2316171" style="width: 100.0%; height: 100.0%;"><b>Almagro</b><br>💰 Promedio total: $707,419<br>📏 Promedio m²: 16,825<br><a href='https://www.argenprop.com/departamento-alquiler--18289408' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_548015c9da27db778c4f607d077605fe.setContent(html_d13d9eb2579d46f66f7e6488e2316171);
+            
+        
+
+        circle_marker_0b52bc255bf708d4963da9b614844065.bindPopup(popup_548015c9da27db778c4f607d077605fe)
+        ;
+
+        
+    
+    
+            circle_marker_0b52bc255bf708d4963da9b614844065.bindTooltip(
+                `<div>
+                     Almagro - $707,419
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0101474d9406b4a9046ad239069786b = L.circleMarker(
+                [-34.61, -58.402],
+                {"bubblingMouseEvents": true, "color": "#fea245ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea245ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_615f26018951cc6bdd42fe5a4456798d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63460bd3a2e349cf57d3a57bec2ed6b2 = $(`<div id="html_63460bd3a2e349cf57d3a57bec2ed6b2" style="width: 100.0%; height: 100.0%;"><b>Balvanera</b><br>💰 Promedio total: $692,500<br>📏 Promedio m²: 13,292<br><a href='https://www.argenprop.com/departamento-alquiler--18060832' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_615f26018951cc6bdd42fe5a4456798d.setContent(html_63460bd3a2e349cf57d3a57bec2ed6b2);
+            
+        
+
+        circle_marker_d0101474d9406b4a9046ad239069786b.bindPopup(popup_615f26018951cc6bdd42fe5a4456798d)
+        ;
+
+        
+    
+    
+            circle_marker_d0101474d9406b4a9046ad239069786b.bindTooltip(
+                `<div>
+                     Balvanera - $692,500
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f87319363981b47ee80af828a2cbc943 = L.circleMarker(
+                [-34.647, -58.379],
+                {"bubblingMouseEvents": true, "color": "#fd8239ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8239ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_3c3ea067233f87bc9a0a66d4b573dd2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2b01172f0049a8dd8f245ffc2545eb2 = $(`<div id="html_a2b01172f0049a8dd8f245ffc2545eb2" style="width: 100.0%; height: 100.0%;"><b>Barracas</b><br>💰 Promedio total: $780,622<br>📏 Promedio m²: 16,317<br><a href='https://www.argenprop.com/departamento-alquiler--18286205' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_3c3ea067233f87bc9a0a66d4b573dd2a.setContent(html_a2b01172f0049a8dd8f245ffc2545eb2);
+            
+        
+
+        circle_marker_f87319363981b47ee80af828a2cbc943.bindPopup(popup_3c3ea067233f87bc9a0a66d4b573dd2a)
+        ;
+
+        
+    
+    
+            circle_marker_f87319363981b47ee80af828a2cbc943.bindTooltip(
+                `<div>
+                     Barracas - $780,622
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d432697fdc1c3673deef59bbe1c5a52 = L.circleMarker(
+                [-34.593, -58.404],
+                {"bubblingMouseEvents": true, "color": "#feb953ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb953ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_d45a7e95935f4b24fcd4d9e13c74135c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_154a4caa990ee73dd4a6fc1f82fc97d4 = $(`<div id="html_154a4caa990ee73dd4a6fc1f82fc97d4" style="width: 100.0%; height: 100.0%;"><b>Barrio Norte</b><br>💰 Promedio total: $620,000<br>📏 Promedio m²: 15,714<br><a href='https://www.argenprop.com/departamento-alquiler--18324748' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_d45a7e95935f4b24fcd4d9e13c74135c.setContent(html_154a4caa990ee73dd4a6fc1f82fc97d4);
+            
+        
+
+        circle_marker_7d432697fdc1c3673deef59bbe1c5a52.bindPopup(popup_d45a7e95935f4b24fcd4d9e13c74135c)
+        ;
+
+        
+    
+    
+            circle_marker_7d432697fdc1c3673deef59bbe1c5a52.bindTooltip(
+                `<div>
+                     Barrio Norte - $620,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08d09481bb88ff747568d0c9cb001516 = L.circleMarker(
+                [-34.563, -58.459],
+                {"bubblingMouseEvents": true, "color": "#f74327ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f74327ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_9a9275626f261418331cf7e0d0f00a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c539240c535e79b9511642b3f3a79486 = $(`<div id="html_c539240c535e79b9511642b3f3a79486" style="width: 100.0%; height: 100.0%;"><b>Belgrano</b><br>💰 Promedio total: $902,640<br>📏 Promedio m²: 19,607<br><a href='https://www.argenprop.com/departamento-alquiler--17537499' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_9a9275626f261418331cf7e0d0f00a18.setContent(html_c539240c535e79b9511642b3f3a79486);
+            
+        
+
+        circle_marker_08d09481bb88ff747568d0c9cb001516.bindPopup(popup_9a9275626f261418331cf7e0d0f00a18)
+        ;
+
+        
+    
+    
+            circle_marker_08d09481bb88ff747568d0c9cb001516.bindTooltip(
+                `<div>
+                     Belgrano - $902,640
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_171af35a1d5f551e87987fc6ca1521c4 = L.circleMarker(
+                [-34.63, -58.415],
+                {"bubblingMouseEvents": true, "color": "#fea546ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea546ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_1e169c7e50faa84221d2187eaf748910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9276c7ba09414435fd9c71df60bcbff4 = $(`<div id="html_9276c7ba09414435fd9c71df60bcbff4" style="width: 100.0%; height: 100.0%;"><b>Boedo</b><br>💰 Promedio total: $684,372<br>📏 Promedio m²: 16,642<br><a href='https://www.argenprop.com/departamento-alquiler--18317737' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_1e169c7e50faa84221d2187eaf748910.setContent(html_9276c7ba09414435fd9c71df60bcbff4);
+            
+        
+
+        circle_marker_171af35a1d5f551e87987fc6ca1521c4.bindPopup(popup_1e169c7e50faa84221d2187eaf748910)
+        ;
+
+        
+    
+    
+            circle_marker_171af35a1d5f551e87987fc6ca1521c4.bindTooltip(
+                `<div>
+                     Boedo - $684,372
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8921b938060346bbfe8b443a2ab8df58 = L.circleMarker(
+                [-34.616, -58.44],
+                {"bubblingMouseEvents": true, "color": "#fd8439ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8439ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_a390019c0f30172e8c410d0439db3097 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64922c17e777900e7d5314229e456305 = $(`<div id="html_64922c17e777900e7d5314229e456305" style="width: 100.0%; height: 100.0%;"><b>Caballito</b><br>💰 Promedio total: $777,026<br>📏 Promedio m²: 19,055<br><a href='https://www.argenprop.com/departamento-alquiler--18289523' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_a390019c0f30172e8c410d0439db3097.setContent(html_64922c17e777900e7d5314229e456305);
+            
+        
+
+        circle_marker_8921b938060346bbfe8b443a2ab8df58.bindPopup(popup_a390019c0f30172e8c410d0439db3097)
+        ;
+
+        
+    
+    
+            circle_marker_8921b938060346bbfe8b443a2ab8df58.bindTooltip(
+                `<div>
+                     Caballito - $777,026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_276aa693e473ea30c350a07be0df5fea = L.circleMarker(
+                [-34.592, -58.454],
+                {"bubblingMouseEvents": true, "color": "#fd6a32ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6a32ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_13b31cd2f10ad67364122ee58f48af96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a590b255c32b724a0b273ee42a2e1769 = $(`<div id="html_a590b255c32b724a0b273ee42a2e1769" style="width: 100.0%; height: 100.0%;"><b>Chacarita</b><br>💰 Promedio total: $825,553<br>📏 Promedio m²: 21,187<br><a href='https://www.argenprop.com/departamento-alquiler--18239637' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_13b31cd2f10ad67364122ee58f48af96.setContent(html_a590b255c32b724a0b273ee42a2e1769);
+            
+        
+
+        circle_marker_276aa693e473ea30c350a07be0df5fea.bindPopup(popup_13b31cd2f10ad67364122ee58f48af96)
+        ;
+
+        
+    
+    
+            circle_marker_276aa693e473ea30c350a07be0df5fea.bindTooltip(
+                `<div>
+                     Chacarita - $825,553
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a99c1f5d52ee409b2cf89aee6ccd64a6 = L.circleMarker(
+                [-34.567, -58.475],
+                {"bubblingMouseEvents": true, "color": "#f13523ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f13523ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_bd421dffc264f47504604dc4ebcdf4bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4291a988f83d6c531a587b0382cc9bf = $(`<div id="html_d4291a988f83d6c531a587b0382cc9bf" style="width: 100.0%; height: 100.0%;"><b>Coghlan</b><br>💰 Promedio total: $934,193<br>📏 Promedio m²: 20,560<br><a href='https://www.argenprop.com/departamento-alquiler--18162594' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_bd421dffc264f47504604dc4ebcdf4bf.setContent(html_d4291a988f83d6c531a587b0382cc9bf);
+            
+        
+
+        circle_marker_a99c1f5d52ee409b2cf89aee6ccd64a6.bindPopup(popup_bd421dffc264f47504604dc4ebcdf4bf)
+        ;
+
+        
+    
+    
+            circle_marker_a99c1f5d52ee409b2cf89aee6ccd64a6.bindTooltip(
+                `<div>
+                     Coghlan - $934,193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_601590570af3bbf5a85db4ab15e4c46d = L.circleMarker(
+                [-34.576, -58.446],
+                {"bubblingMouseEvents": true, "color": "#f33a24ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f33a24ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_f66e50a0620c982da72dbc5c78904807 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23174acdc7fa4e8a0bb1d625add39542 = $(`<div id="html_23174acdc7fa4e8a0bb1d625add39542" style="width: 100.0%; height: 100.0%;"><b>Colegiales</b><br>💰 Promedio total: $922,057<br>📏 Promedio m²: 21,651<br><a href='https://www.argenprop.com/departamento-alquiler--18292253' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_f66e50a0620c982da72dbc5c78904807.setContent(html_23174acdc7fa4e8a0bb1d625add39542);
+            
+        
+
+        circle_marker_601590570af3bbf5a85db4ab15e4c46d.bindPopup(popup_f66e50a0620c982da72dbc5c78904807)
+        ;
+
+        
+    
+    
+            circle_marker_601590570af3bbf5a85db4ab15e4c46d.bindTooltip(
+                `<div>
+                     Colegiales - $922,057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_985c9877eab086157df571ac6e53b774 = L.circleMarker(
+                [-34.619, -58.379],
+                {"bubblingMouseEvents": true, "color": "#feac49ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feac49ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_c478bbc858684d2c45c04f1513c466ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28ac3b5b773f4fdb61a6233fe1292008 = $(`<div id="html_28ac3b5b773f4fdb61a6233fe1292008" style="width: 100.0%; height: 100.0%;"><b>Constitución</b><br>💰 Promedio total: $661,258<br>📏 Promedio m²: 17,196<br><a href='https://www.argenprop.com/departamento-alquiler--18004011' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_c478bbc858684d2c45c04f1513c466ef.setContent(html_28ac3b5b773f4fdb61a6233fe1292008);
+            
+        
+
+        circle_marker_985c9877eab086157df571ac6e53b774.bindPopup(popup_c478bbc858684d2c45c04f1513c466ef)
+        ;
+
+        
+    
+    
+            circle_marker_985c9877eab086157df571ac6e53b774.bindTooltip(
+                `<div>
+                     Constitución - $661,258
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2948b1231e5942cf92254b028339ddce = L.circleMarker(
+                [-34.635, -58.465],
+                {"bubblingMouseEvents": true, "color": "#feaa48ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feaa48ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_20d9db33c08bb774be0ea2c8e8a1fd28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ca74a11a7464a6b34906ef7ec02ef82 = $(`<div id="html_7ca74a11a7464a6b34906ef7ec02ef82" style="width: 100.0%; height: 100.0%;"><b>Flores</b><br>💰 Promedio total: $668,111<br>📏 Promedio m²: 15,503<br><a href='https://www.argenprop.com/departamento-alquiler--5995796' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_20d9db33c08bb774be0ea2c8e8a1fd28.setContent(html_7ca74a11a7464a6b34906ef7ec02ef82);
+            
+        
+
+        circle_marker_2948b1231e5942cf92254b028339ddce.bindPopup(popup_20d9db33c08bb774be0ea2c8e8a1fd28)
+        ;
+
+        
+    
+    
+            circle_marker_2948b1231e5942cf92254b028339ddce.bindTooltip(
+                `<div>
+                     Flores - $668,111
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ccf2dd63cf5fc4148e5361eddf353b4c = L.circleMarker(
+                [-34.635, -58.485],
+                {"bubblingMouseEvents": true, "color": "#fe9e43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9e43ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_73e4bb5c711921be8f7af562e4fef4d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f21801d97bb5b5db8d5f23649ebcb77f = $(`<div id="html_f21801d97bb5b5db8d5f23649ebcb77f" style="width: 100.0%; height: 100.0%;"><b>Floresta</b><br>💰 Promedio total: $706,967<br>📏 Promedio m²: 16,176<br><a href='https://www.argenprop.com/departamento-alquiler--18330504' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_73e4bb5c711921be8f7af562e4fef4d1.setContent(html_f21801d97bb5b5db8d5f23649ebcb77f);
+            
+        
+
+        circle_marker_ccf2dd63cf5fc4148e5361eddf353b4c.bindPopup(popup_73e4bb5c711921be8f7af562e4fef4d1)
+        ;
+
+        
+    
+    
+            circle_marker_ccf2dd63cf5fc4148e5361eddf353b4c.bindTooltip(
+                `<div>
+                     Floresta - $706,967
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1655c57ab69993663f7daf471c4ba4e = L.circleMarker(
+                [-34.598, -58.469],
+                {"bubblingMouseEvents": true, "color": "#fd8d3cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8d3cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_0876067c8225e126891583be7f2d2465 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc056c88e40765ba98593e92cb41da84 = $(`<div id="html_dc056c88e40765ba98593e92cb41da84" style="width: 100.0%; height: 100.0%;"><b>La Paternal</b><br>💰 Promedio total: $759,956<br>📏 Promedio m²: 18,305<br><a href='https://www.argenprop.com/departamento-alquiler--2651593' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_0876067c8225e126891583be7f2d2465.setContent(html_dc056c88e40765ba98593e92cb41da84);
+            
+        
+
+        circle_marker_c1655c57ab69993663f7daf471c4ba4e.bindPopup(popup_0876067c8225e126891583be7f2d2465)
+        ;
+
+        
+    
+    
+            circle_marker_c1655c57ab69993663f7daf471c4ba4e.bindTooltip(
+                `<div>
+                     La Paternal - $759,956
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_081f330e901f408b4ba6acf6dcc6c1a8 = L.circleMarker(
+                [-34.652, -58.505],
+                {"bubblingMouseEvents": true, "color": "#fe9b42ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9b42ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_dffc7021a2d5303eed40a3ce72465135 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_922fc3577a832168dd3dd6358b8a16fa = $(`<div id="html_922fc3577a832168dd3dd6358b8a16fa" style="width: 100.0%; height: 100.0%;"><b>Mataderos</b><br>💰 Promedio total: $715,711<br>📏 Promedio m²: 16,895<br><a href='https://www.argenprop.com/departamento-alquiler--18324880' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_dffc7021a2d5303eed40a3ce72465135.setContent(html_922fc3577a832168dd3dd6358b8a16fa);
+            
+        
+
+        circle_marker_081f330e901f408b4ba6acf6dcc6c1a8.bindPopup(popup_dffc7021a2d5303eed40a3ce72465135)
+        ;
+
+        
+    
+    
+            circle_marker_081f330e901f408b4ba6acf6dcc6c1a8.bindTooltip(
+                `<div>
+                     Mataderos - $715,711
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6452c53133648808bbe6fbff358530f = L.circleMarker(
+                [-34.613, -58.38],
+                {"bubblingMouseEvents": true, "color": "#fe943fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe943fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_4baeb588106da27f7bd60ab5d3a5b6e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9d0481eeb3a36244284de92cf865d7b = $(`<div id="html_c9d0481eeb3a36244284de92cf865d7b" style="width: 100.0%; height: 100.0%;"><b>Monserrat</b><br>💰 Promedio total: $738,690<br>📏 Promedio m²: 19,382<br><a href='https://www.argenprop.com/departamento-alquiler--17829844' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_4baeb588106da27f7bd60ab5d3a5b6e4.setContent(html_c9d0481eeb3a36244284de92cf865d7b);
+            
+        
+
+        circle_marker_b6452c53133648808bbe6fbff358530f.bindPopup(popup_4baeb588106da27f7bd60ab5d3a5b6e4)
+        ;
+
+        
+    
+    
+            circle_marker_b6452c53133648808bbe6fbff358530f.bindTooltip(
+                `<div>
+                     Monserrat - $738,690
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_860a0915d18b894acca07e4b6241de26 = L.circleMarker(
+                [-34.578, -58.425],
+                {"bubblingMouseEvents": true, "color": "#fd6931ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6931ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_80f25ef854e6b706f6a84742ad0980a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_326aa9e2531a3978fbd91a2d6111ed39 = $(`<div id="html_326aa9e2531a3978fbd91a2d6111ed39" style="width: 100.0%; height: 100.0%;"><b>Palermo</b><br>💰 Promedio total: $827,206<br>📏 Promedio m²: 20,456<br><a href='https://www.argenprop.com/departamento-alquiler--18335322' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_80f25ef854e6b706f6a84742ad0980a6.setContent(html_326aa9e2531a3978fbd91a2d6111ed39);
+            
+        
+
+        circle_marker_860a0915d18b894acca07e4b6241de26.bindPopup(popup_80f25ef854e6b706f6a84742ad0980a6)
+        ;
+
+        
+    
+    
+            circle_marker_860a0915d18b894acca07e4b6241de26.bindTooltip(
+                `<div>
+                     Palermo - $827,206
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d607ab5bf34397ac787a90b1cdf5457b = L.circleMarker(
+                [-34.667, -58.474],
+                {"bubblingMouseEvents": true, "color": "#fe963fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe963fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_176a0c63f3e075524bf0cd4ff7afd312 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6315887b94862c65d89f185e2cc60c9 = $(`<div id="html_f6315887b94862c65d89f185e2cc60c9" style="width: 100.0%; height: 100.0%;"><b>Parque Avellaneda</b><br>💰 Promedio total: $732,000<br>📏 Promedio m²: 14,074<br><a href='https://www.argenprop.com/departamento-alquiler--17850340' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_176a0c63f3e075524bf0cd4ff7afd312.setContent(html_f6315887b94862c65d89f185e2cc60c9);
+            
+        
+
+        circle_marker_d607ab5bf34397ac787a90b1cdf5457b.bindPopup(popup_176a0c63f3e075524bf0cd4ff7afd312)
+        ;
+
+        
+    
+    
+            circle_marker_d607ab5bf34397ac787a90b1cdf5457b.bindTooltip(
+                `<div>
+                     Parque Avellaneda - $732,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec79a73c43877c9975453cc98336f121 = L.circleMarker(
+                [-34.588, -58.476],
+                {"bubblingMouseEvents": true, "color": "#fe9c42ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9c42ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_554ca92ccdbb7210c7823ccaabbec600 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0dd9227014c7f4fc8049878f2188c04 = $(`<div id="html_b0dd9227014c7f4fc8049878f2188c04" style="width: 100.0%; height: 100.0%;"><b>Parque Chas</b><br>💰 Promedio total: $712,522<br>📏 Promedio m²: 19,921<br><a href='https://www.argenprop.com/departamento-alquiler--18290682' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_554ca92ccdbb7210c7823ccaabbec600.setContent(html_b0dd9227014c7f4fc8049878f2188c04);
+            
+        
+
+        circle_marker_ec79a73c43877c9975453cc98336f121.bindPopup(popup_554ca92ccdbb7210c7823ccaabbec600)
+        ;
+
+        
+    
+    
+            circle_marker_ec79a73c43877c9975453cc98336f121.bindTooltip(
+                `<div>
+                     Parque Chas - $712,522
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a46f878e8326edfad5f1d746936eac16 = L.circleMarker(
+                [-34.634, -58.4],
+                {"bubblingMouseEvents": true, "color": "#fe9b42ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9b42ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_3c2ffabdfd12db41122634a5c9ddf621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ce0c4d8460f7236f779101812d8e57f = $(`<div id="html_9ce0c4d8460f7236f779101812d8e57f" style="width: 100.0%; height: 100.0%;"><b>Parque Patricios</b><br>💰 Promedio total: $716,500<br>📏 Promedio m²: 16,342<br><a href='https://www.argenprop.com/departamento-alquiler--12787345' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_3c2ffabdfd12db41122634a5c9ddf621.setContent(html_9ce0c4d8460f7236f779101812d8e57f);
+            
+        
+
+        circle_marker_a46f878e8326edfad5f1d746936eac16.bindPopup(popup_3c2ffabdfd12db41122634a5c9ddf621)
+        ;
+
+        
+    
+    
+            circle_marker_a46f878e8326edfad5f1d746936eac16.bindTooltip(
+                `<div>
+                     Parque Patricios - $716,500
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f605711f4f2bbf58257d7a5a5552a38 = L.circleMarker(
+                [-34.595, -58.393],
+                {"bubblingMouseEvents": true, "color": "#fd7234ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7234ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_4501b320f0ddfe01066fea765c2a3ce5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37d2a73cb40ed94e2991d9546fe9e875 = $(`<div id="html_37d2a73cb40ed94e2991d9546fe9e875" style="width: 100.0%; height: 100.0%;"><b>Recoleta</b><br>💰 Promedio total: $809,615<br>📏 Promedio m²: 21,538<br><a href='https://www.argenprop.com/departamento-alquiler--17961200' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_4501b320f0ddfe01066fea765c2a3ce5.setContent(html_37d2a73cb40ed94e2991d9546fe9e875);
+            
+        
+
+        circle_marker_6f605711f4f2bbf58257d7a5a5552a38.bindPopup(popup_4501b320f0ddfe01066fea765c2a3ce5)
+        ;
+
+        
+    
+    
+            circle_marker_6f605711f4f2bbf58257d7a5a5552a38.bindTooltip(
+                `<div>
+                     Recoleta - $809,615
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df38cc2eec0257f4e02f944e0f915f15 = L.circleMarker(
+                [-34.62, -58.405],
+                {"bubblingMouseEvents": true, "color": "#f43b25ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f43b25ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_477a477d92e9face1fc881d53390bbc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b61a7c707397b361aac9d0a7142fbc1 = $(`<div id="html_0b61a7c707397b361aac9d0a7142fbc1" style="width: 100.0%; height: 100.0%;"><b>San Cristóbal</b><br>💰 Promedio total: $920,000<br>📏 Promedio m²: 11,948<br><a href='https://www.argenprop.com/departamento-alquiler--17913269' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_477a477d92e9face1fc881d53390bbc7.setContent(html_0b61a7c707397b361aac9d0a7142fbc1);
+            
+        
+
+        circle_marker_df38cc2eec0257f4e02f944e0f915f15.bindPopup(popup_477a477d92e9face1fc881d53390bbc7)
+        ;
+
+        
+    
+    
+            circle_marker_df38cc2eec0257f4e02f944e0f915f15.bindTooltip(
+                `<div>
+                     San Cristóbal - $920,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e99ba60045637eceb44fc8d550371d0 = L.circleMarker(
+                [-34.573, -58.487],
+                {"bubblingMouseEvents": true, "color": "#fd582cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd582cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d022d988867689b0728b2717f4e46761);
+        
+    
+        var popup_dee31f96f3725ee940eff1280ef963e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e86ebb4b387ca80af297f522f5b53a9 = $(`<div id="html_8e86ebb4b387ca80af297f522f5b53a9" style="width: 100.0%; height: 100.0%;"><b>Villa Urquiza</b><br>💰 Promedio total: $859,800<br>📏 Promedio m²: 22,086<br><a href='https://www.argenprop.com/departamento-alquiler--18035256' target='_blank'>Ver aviso</a></div>`)[0];
+                popup_dee31f96f3725ee940eff1280ef963e1.setContent(html_8e86ebb4b387ca80af297f522f5b53a9);
+            
+        
+
+        circle_marker_4e99ba60045637eceb44fc8d550371d0.bindPopup(popup_dee31f96f3725ee940eff1280ef963e1)
+        ;
+
+        
+    
+    
+            circle_marker_4e99ba60045637eceb44fc8d550371d0.bindTooltip(
+                `<div>
+                     Villa Urquiza - $859,800
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_614467fe5c2fab6c8b8cfdffe708bf28 = {};
+
+    
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.color = d3.scale.threshold()
+              .domain([285000.0, 286901.8036072144, 288803.60721442883, 290705.4108216433, 292607.2144288577, 294509.01803607214, 296410.82164328656, 298312.625250501, 300214.42885771545, 302116.23246492987, 304018.0360721443, 305919.8396793587, 307821.6432865731, 309723.4468937876, 311625.250501002, 313527.0541082164, 315428.85771543084, 317330.66132264526, 319232.46492985974, 321134.26853707415, 323036.07214428857, 324937.875751503, 326839.6793587174, 328741.4829659319, 330643.2865731463, 332545.0901803607, 334446.8937875751, 336348.6973947896, 338250.501002004, 340152.30460921844, 342054.10821643285, 343955.9118236473, 345857.71543086175, 347759.51903807616, 349661.3226452906, 351563.126252505, 353464.9298597195, 355366.7334669339, 357268.5370741483, 359170.3406813627, 361072.14428857714, 362973.9478957916, 364875.75150300603, 366777.55511022045, 368679.35871743486, 370581.1623246493, 372482.96593186376, 374384.7695390782, 376286.5731462926, 378188.376753507, 380090.1803607214, 381991.9839679359, 383893.7875751503, 385795.59118236473, 387697.39478957915, 389599.19839679357, 391501.00200400804, 393402.80561122246, 395304.6092184369, 397206.4128256513, 399108.2164328657, 401010.0200400802, 402911.8236472946, 404813.627254509, 406715.43086172343, 408617.23446893785, 410519.0380761523, 412420.84168336674, 414322.64529058116, 416224.4488977956, 418126.25250501, 420028.05611222447, 421929.8597194389, 423831.6633266533, 425733.4669338678, 427635.27054108214, 429537.0741482966, 431438.877755511, 433340.68136272545, 435242.4849699399, 437144.2885771543, 439046.09218436875, 440947.89579158317, 442849.6993987976, 444751.50300601206, 446653.3066132264, 448555.1102204409, 450456.9138276553, 452358.71743486973, 454260.5210420842, 456162.32464929856, 458064.12825651304, 459965.93186372746, 461867.7354709419, 463769.53907815635, 465671.3426853707, 467573.1462925852, 469474.9498997996, 471376.753507014, 473278.5571142285, 475180.36072144285, 477082.1643286573, 478983.96793587174, 480885.77154308616, 482787.57515030063, 484689.378757515, 486591.18236472947, 488492.9859719439, 490394.7895791583, 492296.5931863728, 494198.39679358713, 496100.2004008016, 498002.004008016, 499903.80761523044, 501805.6112224449, 503707.4148296593, 505609.21843687375, 507511.02204408817, 509412.8256513026, 511314.62925851706, 513216.4328657315, 515118.2364729459, 517020.0400801603, 518921.8436873747, 520823.6472945892, 522725.4509018036, 524627.254509018, 526529.0581162325, 528430.8617234469, 530332.6653306613, 532234.4689378757, 534136.2725450902, 536038.0761523047, 537939.879759519, 539841.6833667335, 541743.4869739478, 543645.2905811623, 545547.0941883768, 547448.8977955912, 549350.7014028056, 551252.50501002, 553154.3086172345, 555056.1122244489, 556957.9158316634, 558859.7194388778, 560761.5230460921, 562663.3266533066, 564565.1302605211, 566466.9338677356, 568368.7374749499, 570270.5410821643, 572172.3446893787, 574074.1482965932, 575975.9519038077, 577877.755511022, 579779.5591182364, 581681.3627254509, 583583.1663326654, 585484.9699398798, 587386.7735470942, 589288.5771543086, 591190.380761523, 593092.1843687375, 594993.987975952, 596895.7915831663, 598797.5951903807, 600699.3987975952, 602601.2024048097, 604503.0060120241, 606404.8096192385, 608306.6132264528, 610208.4168336673, 612110.2204408818, 614012.0240480963, 615913.8276553106, 617815.631262525, 619717.4348697395, 621619.2384769539, 623521.0420841684, 625422.8456913828, 627324.6492985971, 629226.4529058116, 631128.2565130261, 633030.0601202406, 634931.8637274549, 636833.6673346693, 638735.4709418837, 640637.2745490982, 642539.0781563127, 644440.881763527, 646342.6853707414, 648244.4889779559, 650146.2925851704, 652048.0961923848, 653949.8997995992, 655851.7034068136, 657753.507014028, 659655.3106212425, 661557.114228457, 663458.9178356713, 665360.7214428857, 667262.5250501002, 669164.3286573146, 671066.1322645291, 672967.9358717435, 674869.7394789578, 676771.5430861723, 678673.3466933868, 680575.1503006013, 682476.9539078156, 684378.75751503, 686280.5611222445, 688182.3647294589, 690084.1683366734, 691985.9719438878, 693887.7755511021, 695789.5791583166, 697691.3827655311, 699593.1863727455, 701494.9899799599, 703396.7935871743, 705298.5971943887, 707200.4008016032, 709102.2044088177, 711004.008016032, 712905.8116232464, 714807.6152304609, 716709.4188376754, 718611.2224448898, 720513.0260521042, 722414.8296593186, 724316.633266533, 726218.4368737475, 728120.240480962, 730022.0440881763, 731923.8476953908, 733825.6513026052, 735727.4549098196, 737629.2585170341, 739531.0621242485, 741432.865731463, 743334.6693386773, 745236.4729458918, 747138.2765531063, 749040.0801603206, 750941.8837675351, 752843.6873747495, 754745.4909819639, 756647.2945891784, 758549.0981963928, 760450.9018036072, 762352.7054108216, 764254.5090180361, 766156.3126252505, 768058.1162324649, 769959.9198396794, 771861.7234468937, 773763.5270541082, 775665.3306613227, 777567.134268537, 779468.9378757515, 781370.7414829659, 783272.5450901804, 785174.3486973948, 787076.1523046092, 788977.9559118237, 790879.759519038, 792781.5631262525, 794683.366733467, 796585.1703406814, 798486.9739478958, 800388.7775551102, 802290.5811623246, 804192.3847695391, 806094.1883767536, 807995.991983968, 809897.7955911823, 811799.5991983968, 813701.4028056113, 815603.2064128256, 817505.0100200401, 819406.8136272546, 821308.6172344689, 823210.4208416834, 825112.2244488978, 827014.0280561122, 828915.8316633267, 830817.6352705411, 832719.4388777555, 834621.2424849699, 836523.0460921844, 838424.8496993989, 840326.6533066132, 842228.4569138277, 844130.260521042, 846032.0641282565, 847933.867735471, 849835.6713426854, 851737.4749498998, 853639.2785571142, 855541.0821643287, 857442.8857715431, 859344.6893787575, 861246.492985972, 863148.2965931863, 865050.1002004008, 866951.9038076153, 868853.7074148296, 870755.5110220441, 872657.3146292585, 874559.118236473, 876460.9218436874, 878362.7254509018, 880264.5290581163, 882166.3326653306, 884068.1362725451, 885969.9398797596, 887871.7434869739, 889773.5470941884, 891675.3507014028, 893577.1543086172, 895478.9579158317, 897380.7615230461, 899282.5651302605, 901184.3687374749, 903086.1723446894, 904987.9759519038, 906889.7795591182, 908791.5831663327, 910693.386773547, 912595.1903807615, 914496.993987976, 916398.7975951903, 918300.6012024048, 920202.4048096192, 922104.2084168337, 924006.0120240481, 925907.8156312625, 927809.619238477, 929711.4228456913, 931613.2264529058, 933515.0300601203, 935416.8336673346, 937318.6372745491, 939220.4408817636, 941122.244488978, 943024.0480961924, 944925.8517034068, 946827.6553106213, 948729.4589178357, 950631.2625250501, 952533.0661322646, 954434.8697394789, 956336.6733466934, 958238.4769539079, 960140.2805611222, 962042.0841683367, 963943.8877755511, 965845.6913827655, 967747.49498998, 969649.2985971944, 971551.1022044088, 973452.9058116232, 975354.7094188377, 977256.5130260522, 979158.3166332665, 981060.120240481, 982961.9238476953, 984863.7274549098, 986765.5310621243, 988667.3346693387, 990569.1382765531, 992470.9418837675, 994372.745490982, 996274.5490981964, 998176.3527054108, 1000078.1563126253, 1001979.9599198396, 1003881.7635270541, 1005783.5671342686, 1007685.3707414829, 1009587.1743486974, 1011488.9779559118, 1013390.7815631262, 1015292.5851703407, 1017194.3887775551, 1019096.1923847696, 1020997.9959919839, 1022899.7995991984, 1024801.6032064129, 1026703.4068136272, 1028605.2104208417, 1030507.0140280561, 1032408.8176352705, 1034310.621242485, 1036212.4248496994, 1038114.2284569138, 1040016.0320641282, 1041917.8356713427, 1043819.6392785572, 1045721.4428857715, 1047623.246492986, 1049525.0501002003, 1051426.8537074148, 1053328.6573146293, 1055230.4609218435, 1057132.2645290582, 1059034.0681362725, 1060935.871743487, 1062837.6753507014, 1064739.4789579157, 1066641.2825651304, 1068543.0861723446, 1070444.889779559, 1072346.6933867736, 1074248.4969939878, 1076150.3006012025, 1078052.1042084168, 1079953.9078156312, 1081855.7114228457, 1083757.51503006, 1085659.3186372747, 1087561.122244489, 1089462.9258517034, 1091364.7294589179, 1093266.533066132, 1095168.3366733468, 1097070.140280561, 1098971.9438877755, 1100873.74749499, 1102775.5511022042, 1104677.354709419, 1106579.1583166332, 1108480.9619238477, 1110382.7655310621, 1112284.5691382764, 1114186.372745491, 1116088.1763527053, 1117989.9799599198, 1119891.7835671343, 1121793.5871743485, 1123695.3907815632, 1125597.1943887775, 1127498.997995992, 1129400.8016032064, 1131302.6052104207, 1133204.4088176354, 1135106.2124248496, 1137008.016032064, 1138909.8196392786, 1140811.6232464928, 1142713.4268537075, 1144615.2304609218, 1146517.0340681362, 1148418.8376753507, 1150320.641282565, 1152222.4448897797, 1154124.248496994, 1156026.0521042084, 1157927.8557114229, 1159829.659318637, 1161731.4629258518, 1163633.266533066, 1165535.0701402805, 1167436.873747495, 1169338.6773547092, 1171240.480961924, 1173142.2845691382, 1175044.0881763527, 1176945.8917835671, 1178847.6953907816, 1180749.498997996, 1182651.3026052103, 1184553.1062124248, 1186454.9098196393, 1188356.7134268538, 1190258.5170340682, 1192160.3206412825, 1194062.124248497, 1195963.9278557114, 1197865.731462926, 1199767.5350701404, 1201669.3386773546, 1203571.142284569, 1205472.9458917836, 1207374.749498998, 1209276.5531062125, 1211178.3567134268, 1213080.1603206412, 1214981.9639278557, 1216883.7675350702, 1218785.5711422847, 1220687.374749499, 1222589.1783567134, 1224490.9819639279, 1226392.7855711423, 1228294.5891783568, 1230196.392785571, 1232098.1963927855, 1234000.0])
+              .range(['#ffffccff', '#ffffccff', '#ffffcbff', '#ffffcaff', '#fffec9ff', '#fffec9ff', '#fffec8ff', '#fffdc7ff', '#fffdc7ff', '#fffdc6ff', '#fffdc5ff', '#fffcc5ff', '#fffcc4ff', '#fffcc3ff', '#fffbc2ff', '#fffbc2ff', '#fffbc1ff', '#fffbc0ff', '#fffac0ff', '#fffabfff', '#fffabeff', '#fff9bdff', '#fff9bdff', '#fff9bcff', '#fff9bbff', '#fff8bbff', '#fff8baff', '#fff8b9ff', '#fff7b8ff', '#fff7b8ff', '#fff7b7ff', '#fff7b6ff', '#fff6b6ff', '#fff6b5ff', '#fff6b4ff', '#fff5b4ff', '#fff5b3ff', '#fff5b2ff', '#fff4b1ff', '#fff4b1ff', '#fff4b0ff', '#fff4afff', '#fff3afff', '#fff3aeff', '#fff3adff', '#fff2acff', '#fff2acff', '#fff2abff', '#fff2aaff', '#fff1aaff', '#fff1a9ff', '#fff1a8ff', '#fff0a7ff', '#fff0a7ff', '#fff0a6ff', '#fff0a5ff', '#ffefa5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeea0ff', '#ffeda0ff', '#ffed9fff', '#ffed9eff', '#ffec9eff', '#ffec9dff', '#ffec9cff', '#ffeb9cff', '#ffeb9bff', '#ffeb9aff', '#ffea9aff', '#ffea99ff', '#ffea98ff', '#ffe998ff', '#ffe997ff', '#ffe996ff', '#ffe896ff', '#ffe895ff', '#ffe894ff', '#ffe794ff', '#ffe793ff', '#ffe792ff', '#ffe692ff', '#ffe691ff', '#ffe690ff', '#ffe68fff', '#ffe58fff', '#ffe58eff', '#ffe58dff', '#ffe48dff', '#ffe48cff', '#ffe48bff', '#ffe38bff', '#ffe38aff', '#ffe389ff', '#ffe289ff', '#ffe288ff', '#ffe287ff', '#ffe187ff', '#ffe186ff', '#ffe185ff', '#ffe085ff', '#ffe084ff', '#ffe083ff', '#ffdf83ff', '#ffdf82ff', '#ffdf81ff', '#ffde81ff', '#ffde80ff', '#ffde7fff', '#ffdd7fff', '#ffdd7eff', '#ffdd7dff', '#ffdc7dff', '#ffdc7cff', '#ffdc7bff', '#ffdc7bff', '#ffdb7aff', '#ffdb79ff', '#ffdb78ff', '#ffda78ff', '#ffda77ff', '#ffda76ff', '#fed976ff', '#fed975ff', '#fed874ff', '#fed774ff', '#fed773ff', '#fed672ff', '#fed572ff', '#fed571ff', '#fed470ff', '#fed470ff', '#fed36fff', '#fed26eff', '#fed26eff', '#fed16dff', '#fed06cff', '#fed06cff', '#fecf6bff', '#fecf6aff', '#fece6aff', '#fecd69ff', '#fecd68ff', '#fecc68ff', '#fecb67ff', '#fecb66ff', '#feca66ff', '#feca65ff', '#fec964ff', '#fec864ff', '#fec863ff', '#fec762ff', '#fec662ff', '#fec661ff', '#fec560ff', '#fec45fff', '#fec45fff', '#fec35eff', '#fec35dff', '#fec25dff', '#fec15cff', '#fec15bff', '#fec05bff', '#febf5aff', '#febf59ff', '#febe59ff', '#febe58ff', '#febd57ff', '#febc57ff', '#febc56ff', '#febb55ff', '#feba55ff', '#feba54ff', '#feb953ff', '#feb953ff', '#feb852ff', '#feb751ff', '#feb751ff', '#feb650ff', '#feb54fff', '#feb54fff', '#feb44eff', '#feb44dff', '#feb34dff', '#feb24cff', '#feb24cff', '#feb14bff', '#feb04bff', '#feb04bff', '#feaf4bff', '#feaf4aff', '#feae4aff', '#feae4aff', '#fead4aff', '#feac49ff', '#feac49ff', '#feab49ff', '#feab48ff', '#feaa48ff', '#fea948ff', '#fea948ff', '#fea847ff', '#fea847ff', '#fea747ff', '#fea647ff', '#fea646ff', '#fea546ff', '#fea546ff', '#fea446ff', '#fea345ff', '#fea345ff', '#fea245ff', '#fea245ff', '#fea144ff', '#fea044ff', '#fea044ff', '#fe9f44ff', '#fe9f43ff', '#fe9e43ff', '#fe9d43ff', '#fe9d43ff', '#fe9c42ff', '#fe9c42ff', '#fe9b42ff', '#fe9a42ff', '#fe9a41ff', '#fe9941ff', '#fe9941ff', '#fe9840ff', '#fe9740ff', '#fe9740ff', '#fe9640ff', '#fe963fff', '#fe953fff', '#fe943fff', '#fe943fff', '#fe933eff', '#fe933eff', '#fe923eff', '#fe923eff', '#fe913dff', '#fe903dff', '#fe903dff', '#fe8f3dff', '#fe8f3cff', '#fe8e3cff', '#fe8d3cff', '#fd8d3cff', '#fd8c3bff', '#fd8b3bff', '#fd8a3bff', '#fd883aff', '#fd873aff', '#fd863aff', '#fd853aff', '#fd8439ff', '#fd8339ff', '#fd8239ff', '#fd8138ff', '#fd8038ff', '#fd7f38ff', '#fd7e38ff', '#fd7d37ff', '#fd7c37ff', '#fd7b37ff', '#fd7a36ff', '#fd7936ff', '#fd7836ff', '#fd7736ff', '#fd7635ff', '#fd7535ff', '#fd7435ff', '#fd7334ff', '#fd7234ff', '#fd7134ff', '#fd7033ff', '#fd6f33ff', '#fd6e33ff', '#fd6d33ff', '#fd6c32ff', '#fd6b32ff', '#fd6a32ff', '#fd6931ff', '#fd6831ff', '#fd6731ff', '#fd6631ff', '#fd6530ff', '#fd6430ff', '#fd6330ff', '#fd622fff', '#fd612fff', '#fd602fff', '#fd5f2fff', '#fd5e2eff', '#fd5d2eff', '#fd5c2eff', '#fd5b2dff', '#fd5a2dff', '#fd592dff', '#fd582dff', '#fd572cff', '#fd562cff', '#fd552cff', '#fd542bff', '#fd532bff', '#fd522bff', '#fd512aff', '#fd502aff', '#fd4f2aff', '#fc4e2aff', '#fc4d29ff', '#fc4c29ff', '#fb4b29ff', '#fb4a29ff', '#fa4a29ff', '#fa4928ff', '#fa4828ff', '#f94728ff', '#f94628ff', '#f84527ff', '#f84427ff', '#f84427ff', '#f74327ff', '#f74226ff', '#f64126ff', '#f64026ff', '#f63f26ff', '#f53f26ff', '#f53e25ff', '#f43d25ff', '#f43c25ff', '#f43b25ff', '#f33a24ff', '#f33a24ff', '#f23924ff', '#f23824ff', '#f23724ff', '#f13623ff', '#f13523ff', '#f03523ff', '#f03423ff', '#f03322ff', '#ef3222ff', '#ef3122ff', '#ee3022ff', '#ee3022ff', '#ee2f21ff', '#ed2e21ff', '#ed2d21ff', '#ec2c21ff', '#ec2b20ff', '#ec2b20ff', '#eb2a20ff', '#eb2920ff', '#ea281fff', '#ea271fff', '#ea261fff', '#e9261fff', '#e9251fff', '#e8241eff', '#e8231eff', '#e8221eff', '#e7211eff', '#e7211dff', '#e6201dff', '#e61f1dff', '#e61e1dff', '#e51d1dff', '#e51c1cff', '#e41b1cff', '#e41b1cff', '#e31a1cff', '#e3191cff', '#e2191cff', '#e2181cff', '#e1181cff', '#e0181cff', '#e0171dff', '#df171dff', '#df161dff', '#de161dff', '#dd161dff', '#dd151dff', '#dc151eff', '#dc141eff', '#db141eff', '#da131eff', '#da131eff', '#d9131eff', '#d9121eff', '#d8121fff', '#d7111fff', '#d7111fff', '#d6111fff', '#d5101fff', '#d5101fff', '#d40f20ff', '#d40f20ff', '#d30e20ff', '#d20e20ff', '#d20e20ff', '#d10d20ff', '#d10d21ff', '#d00c21ff', '#cf0c21ff', '#cf0b21ff', '#ce0b21ff', '#ce0b21ff', '#cd0a22ff', '#cc0a22ff', '#cc0922ff', '#cb0922ff', '#ca0922ff', '#ca0822ff', '#c90822ff', '#c90723ff', '#c80723ff', '#c70623ff', '#c70623ff', '#c60623ff', '#c60523ff', '#c50524ff', '#c40424ff', '#c40424ff', '#c30424ff', '#c30324ff', '#c20324ff', '#c10225ff', '#c10225ff', '#c00125ff', '#bf0125ff', '#bf0125ff', '#be0025ff', '#be0026ff', '#bd0026ff', '#bc0026ff', '#bb0026ff', '#ba0026ff', '#b90026ff', '#b80026ff', '#b70026ff', '#b60026ff', '#b50026ff', '#b40026ff', '#b30026ff', '#b20026ff', '#b10026ff', '#b00026ff', '#af0026ff', '#ae0026ff', '#ad0026ff', '#ac0026ff', '#ab0026ff', '#aa0026ff', '#a90026ff', '#a80026ff', '#a70026ff', '#a60026ff', '#a50026ff', '#a40026ff', '#a30026ff', '#a20026ff', '#a10026ff', '#a00026ff', '#9f0026ff', '#9e0026ff', '#9d0026ff', '#9c0026ff', '#9b0026ff', '#9b0026ff', '#9a0026ff', '#990026ff', '#980026ff', '#970026ff', '#960026ff', '#950026ff', '#940026ff', '#930026ff', '#920026ff', '#910026ff', '#900026ff', '#8f0026ff', '#8e0026ff', '#8d0026ff', '#8c0026ff', '#8b0026ff', '#8a0026ff', '#890026ff', '#880026ff', '#870026ff', '#860026ff', '#850026ff', '#840026ff', '#830026ff', '#820026ff', '#810026ff', '#800026ff']);
+    
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.x = d3.scale.linear()
+              .domain([285000.0, 1234000.0])
+              .range([0, 450 - 50]);
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.legend = L.control({position: 'topright'});
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.legend.addTo(map_d022d988867689b0728b2717f4e46761);
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.xAxis = d3.svg.axis()
+        .scale(color_map_614467fe5c2fab6c8b8cfdffe708bf28.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([285000.0, 403625.0, 522250.0, 640875.0, 759500.0, 878125.0, 996750.0, 1115375.0, 1234000.0]);
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.g = color_map_614467fe5c2fab6c8b8cfdffe708bf28.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.g.selectAll("rect")
+        .data(color_map_614467fe5c2fab6c8b8cfdffe708bf28.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_614467fe5c2fab6c8b8cfdffe708bf28.x(color_map_614467fe5c2fab6c8b8cfdffe708bf28.color.domain()[i - 1]) : color_map_614467fe5c2fab6c8b8cfdffe708bf28.x.range()[0],
+            x1: i < color_map_614467fe5c2fab6c8b8cfdffe708bf28.color.domain().length ? color_map_614467fe5c2fab6c8b8cfdffe708bf28.x(color_map_614467fe5c2fab6c8b8cfdffe708bf28.color.domain()[i]) : color_map_614467fe5c2fab6c8b8cfdffe708bf28.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_614467fe5c2fab6c8b8cfdffe708bf28.g.call(color_map_614467fe5c2fab6c8b8cfdffe708bf28.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Promedio de alquiler (ARS)");
+</script>
+</html>

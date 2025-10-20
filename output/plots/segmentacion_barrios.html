@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_798d055815ee2815613ba18804a65316 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_798d055815ee2815613ba18804a65316" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_798d055815ee2815613ba18804a65316 = L.map(
+                "map_798d055815ee2815613ba18804a65316",
+                {
+                    center: [-34.6037, -58.3816],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab611680475912f9dd32c844aacf0b8e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ab611680475912f9dd32c844aacf0b8e.addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+            var circle_marker_e48a892facb66c020d9ee680932b4b94 = L.circleMarker(
+                [-34.61, -58.42],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_dea93380f6fea7813e32780e9e7cc62c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a526a95f48cc554c366f689e5e6fdcd4 = $(`<div id="html_a526a95f48cc554c366f689e5e6fdcd4" style="width: 100.0%; height: 100.0%;"><b>Almagro</b><br>Cluster 0.0<br>Precio m²: $16,825</div>`)[0];
+                popup_dea93380f6fea7813e32780e9e7cc62c.setContent(html_a526a95f48cc554c366f689e5e6fdcd4);
+            
+        
+
+        circle_marker_e48a892facb66c020d9ee680932b4b94.bindPopup(popup_dea93380f6fea7813e32780e9e7cc62c)
+        ;
+
+        
+    
+    
+            var circle_marker_830c7665813710b5495ee7becb14b9ea = L.circleMarker(
+                [-34.61, -58.402],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_d54d3b7ab5fa58fd86832e4beeb015c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f61460f78d408319cf637d06e7ad31ad = $(`<div id="html_f61460f78d408319cf637d06e7ad31ad" style="width: 100.0%; height: 100.0%;"><b>Balvanera</b><br>Cluster 3.0<br>Precio m²: $13,292</div>`)[0];
+                popup_d54d3b7ab5fa58fd86832e4beeb015c8.setContent(html_f61460f78d408319cf637d06e7ad31ad);
+            
+        
+
+        circle_marker_830c7665813710b5495ee7becb14b9ea.bindPopup(popup_d54d3b7ab5fa58fd86832e4beeb015c8)
+        ;
+
+        
+    
+    
+            var circle_marker_a9521a69741a9f128fa69cdf1e972b4d = L.circleMarker(
+                [-34.563, -58.459],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_291edaaf412e92c4c09faf132a3bbd2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4961e1e0eeb509a1247690619ba88cea = $(`<div id="html_4961e1e0eeb509a1247690619ba88cea" style="width: 100.0%; height: 100.0%;"><b>Belgrano</b><br>Cluster 1.0<br>Precio m²: $19,607</div>`)[0];
+                popup_291edaaf412e92c4c09faf132a3bbd2c.setContent(html_4961e1e0eeb509a1247690619ba88cea);
+            
+        
+
+        circle_marker_a9521a69741a9f128fa69cdf1e972b4d.bindPopup(popup_291edaaf412e92c4c09faf132a3bbd2c)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ea25275bd570134068070b363e719d = L.circleMarker(
+                [-34.63, -58.415],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_548f0b647fb04dd7d91c60f7ca4e06c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21c7832bc45647cd8816a2e8a3425fcb = $(`<div id="html_21c7832bc45647cd8816a2e8a3425fcb" style="width: 100.0%; height: 100.0%;"><b>Boedo</b><br>Cluster 0.0<br>Precio m²: $16,642</div>`)[0];
+                popup_548f0b647fb04dd7d91c60f7ca4e06c6.setContent(html_21c7832bc45647cd8816a2e8a3425fcb);
+            
+        
+
+        circle_marker_a0ea25275bd570134068070b363e719d.bindPopup(popup_548f0b647fb04dd7d91c60f7ca4e06c6)
+        ;
+
+        
+    
+    
+            var circle_marker_9010d0d6b5082e872032a6b5b805cf2d = L.circleMarker(
+                [-34.616, -58.44],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_e2a8b536cf51b74b5ec4653e9880fcb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd609e8672e3fe5113b016e8e1e833f8 = $(`<div id="html_bd609e8672e3fe5113b016e8e1e833f8" style="width: 100.0%; height: 100.0%;"><b>Caballito</b><br>Cluster 1.0<br>Precio m²: $19,055</div>`)[0];
+                popup_e2a8b536cf51b74b5ec4653e9880fcb5.setContent(html_bd609e8672e3fe5113b016e8e1e833f8);
+            
+        
+
+        circle_marker_9010d0d6b5082e872032a6b5b805cf2d.bindPopup(popup_e2a8b536cf51b74b5ec4653e9880fcb5)
+        ;
+
+        
+    
+    
+            var circle_marker_7b97941196fff90447e129aaa6336a9e = L.circleMarker(
+                [-34.635, -58.465],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_8946545027dd9df4ea36283710cb106c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0caa2a29b9775fcfa3340f39c6fa40b9 = $(`<div id="html_0caa2a29b9775fcfa3340f39c6fa40b9" style="width: 100.0%; height: 100.0%;"><b>Flores</b><br>Cluster 0.0<br>Precio m²: $15,503</div>`)[0];
+                popup_8946545027dd9df4ea36283710cb106c.setContent(html_0caa2a29b9775fcfa3340f39c6fa40b9);
+            
+        
+
+        circle_marker_7b97941196fff90447e129aaa6336a9e.bindPopup(popup_8946545027dd9df4ea36283710cb106c)
+        ;
+
+        
+    
+    
+            var circle_marker_f8c48e2ad873eabbff92c38cb2057e81 = L.circleMarker(
+                [-34.578, -58.425],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_9d89249727ffb8748668cfc5ca0cb908 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e410c055c693b9a4c26b0c72be6f731d = $(`<div id="html_e410c055c693b9a4c26b0c72be6f731d" style="width: 100.0%; height: 100.0%;"><b>Palermo</b><br>Cluster 1.0<br>Precio m²: $20,456</div>`)[0];
+                popup_9d89249727ffb8748668cfc5ca0cb908.setContent(html_e410c055c693b9a4c26b0c72be6f731d);
+            
+        
+
+        circle_marker_f8c48e2ad873eabbff92c38cb2057e81.bindPopup(popup_9d89249727ffb8748668cfc5ca0cb908)
+        ;
+
+        
+    
+    
+            var circle_marker_446bf8d015a1f8a616ef4803f59fc9a6 = L.circleMarker(
+                [-34.595, -58.393],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_b38737b977e268c2781550675d2ba190 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a619135414626eeb98313429a9ed4d53 = $(`<div id="html_a619135414626eeb98313429a9ed4d53" style="width: 100.0%; height: 100.0%;"><b>Recoleta</b><br>Cluster 1.0<br>Precio m²: $21,538</div>`)[0];
+                popup_b38737b977e268c2781550675d2ba190.setContent(html_a619135414626eeb98313429a9ed4d53);
+            
+        
+
+        circle_marker_446bf8d015a1f8a616ef4803f59fc9a6.bindPopup(popup_b38737b977e268c2781550675d2ba190)
+        ;
+
+        
+    
+    
+            var circle_marker_9aed52564284b3ed27737a1a48930eb9 = L.circleMarker(
+                [-34.573, -58.487],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_798d055815ee2815613ba18804a65316);
+        
+    
+        var popup_8eb5c3d12bebd47189b4ab0241e279e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d23e48d0d9dc5a191e09cd188f1b1fa3 = $(`<div id="html_d23e48d0d9dc5a191e09cd188f1b1fa3" style="width: 100.0%; height: 100.0%;"><b>Villa Urquiza</b><br>Cluster 1.0<br>Precio m²: $22,086</div>`)[0];
+                popup_8eb5c3d12bebd47189b4ab0241e279e1.setContent(html_d23e48d0d9dc5a191e09cd188f1b1fa3);
+            
+        
+
+        circle_marker_9aed52564284b3ed27737a1a48930eb9.bindPopup(popup_8eb5c3d12bebd47189b4ab0241e279e1)
+        ;
+
+        
+    
+</script>
+</html>
